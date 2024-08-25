@@ -12,8 +12,8 @@ This is a simple AI chatbot application built with Streamlit and powered by Groq
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/MrMashood/AI-Chat-Bot.git
-    cd AI-Chat-Bot
+    git clone https://github.com/MrMashood/ChatBot.git
+    cd ChatBot
     ```
 
 2. Install the required dependencies:
