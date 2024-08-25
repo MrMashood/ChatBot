@@ -1,19 +1,30 @@
-# AI Chat Bot
+# AI Chat Bot Collection
 
-This is a simple AI chatbot application built with Streamlit and powered by Groq's chat completion API. The bot provides clear, concise, and accurate answers to user queries.
+This repository contains two AI chatbot applications built with Streamlit and powered by Groq's chat completion API. These bots provide accurate and concise responses to user queries, with one supporting basic query handling and the other offering persistent chat history.
 
-## Features
+## Project Overview
 
-- **Streamlit Framework:** Used for building the interactive web app.
-- **Groq API:** Integrated with Groq's `mixtral-8x7b-32768` model for generating AI responses.
-- **User-Friendly Interface:** Users can input their queries and receive instant responses.
+### 1. `basic_chain_response.py`
+- **Functionality:** A simple chatbot that responds to user queries with no memory of previous interactions.
+- **Model:** `mixtral-8x7b-32768`
+- **Features:**
+  - Takes user input and generates a response using the Groq API.
+  - Displays the response directly in the Streamlit app.
+
+### 2. `memory_chatbot.py`
+- **Functionality:** An advanced chatbot that remembers previous interactions, creating a more coherent and personalized conversation.
+- **Model:** `mixtral-8x7b-32768`
+- **Features:**
+  - Maintains a session-based chat history.
+  - Formats the conversation to keep responses concise and relevant.
+  - Uses a refined prompt template to encourage follow-up questions.
 
 ## Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/MrMashood/ChatBot.git
-    cd ChatBot
+    git clone https://github.com/MrMashood/AI-Chat-Bot-Collection.git
+    cd AI-Chat-Bot-Collection
     ```
 
 2. Install the required dependencies:
@@ -29,23 +40,21 @@ This is a simple AI chatbot application built with Streamlit and powered by Groq
       GROQ_API_KEY = "your_api_key_here"
       ```
 
-4. Run the Streamlit app:
-    ```bash
-    streamlit run app.py
-    ```
-
 ## Usage
 
+- To run `basic_chain_response.py`:
+    ```bash
+    streamlit run basic_chain_response.py
+    ```
+
+- To run `memory_chatbot.py`:
+    ```bash
+    streamlit run memory_chatbot.py
+    ```
+
 - Open your browser and go to `http://localhost:8501`.
-- Enter your query in the input box.
-- The AI chatbot will generate and display a response based on your query.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Author
 
 Mashhood Ur Rehman
-
-[GitHub Profile](https://github.com/MrMashood)
